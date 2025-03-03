@@ -51,7 +51,7 @@ class Bottleneck(nn.Module):
         return y
 
 
-model = YOLO('/kaggle/working/yolov8m.pt')
+model = YOLO('/home/datpham/datpham/Yolo-v8/yolov8m.pt')
 
 model.model.model[0] = C2F(
     in_channels=4,
