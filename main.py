@@ -177,7 +177,7 @@ print(nn.Sequential(*model.model.model))
 
 model.model.model = nn.Sequential(*model.model.model)
 
-path = "/kaggle/input/warp-d/Warp-D/data.yaml"
+path = "/home/datpham/datpham/Yolo-v8/Warp-D/data.yaml"
 
 results = model.train(
     data=path,
