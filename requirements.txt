@@ -1,5 +1,2 @@
 torch
 ultralytics
-numpy
-opencv-python
-streamlit
