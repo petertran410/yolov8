@@ -214,6 +214,6 @@ results = model.train(
     save=True,
     verbose=True,
     exist_ok=True,
-    name="Test on Warp-D dataset version 2",
+    name="Test on Warp-D dataset",
     device='0,1'
 )
