@@ -51,7 +51,7 @@ class Bottleneck(nn.Module):
         return y
 
 
-model = YOLO('/home/datpham/datpham/Yolo-v8/yolov8m.pt')
+model = YOLO('/home/datpham/datpham/yolov8/yolov8m.pt')
 
 model.model.model[0] = C2F(
     in_channels=4,
@@ -177,7 +177,7 @@ print(nn.Sequential(*model.model.model))
 
 model.model.model = nn.Sequential(*model.model.model)
 
-path = "/home/datpham/datpham/Yolo-v8/Warp-D/data.yaml"
+path = "/home/datpham/datpham/yolov8/Warp-D/data.yaml"
 
 results = model.train(
     data=path,
@@ -215,5 +215,5 @@ results = model.train(
     verbose=True,
     exist_ok=True,
     name="Test on Warp-D dataset",
-    device='0,1'
+    device='0'
 )
