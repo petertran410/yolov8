@@ -18,5 +18,5 @@ for result in results:
     keypoints = result.keypoints
     probs = result.probs
     obb = result.obb
-    result.save(filename="4.jpg")
+    result.save(filename="Change name of save image.jpg")
     print(result)
